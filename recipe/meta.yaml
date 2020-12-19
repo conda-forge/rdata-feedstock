@@ -1,5 +1,5 @@
 {% set name = "rdata" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rdata-{{ version }}.tar.gz
-  sha256: 96ac7165f07e2db298c840be677d5af57512dac2887be513ab0bc56517fd2a8a
+  sha256: b72dd369dedddbf40b9301dfd642ba67408af571a0a06fff048c643106b9516a
 
 build:
   number: 0
@@ -44,7 +44,7 @@ about:
     language or its libraries, and thus it is released under a MIT license.
   doc_url: https://rdata.readthedocs.io/
   dev_url: https://github.com/vnmabus/rdata
-  
+
 extra:
   recipe-maintainers:
     - vnmabus

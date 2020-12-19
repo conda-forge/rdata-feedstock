@@ -5,9 +5,13 @@ Home: https://github.com/vnmabus/rdata
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rdata-feedstock/blob/master/LICENSE.txt)
 
 Summary: rdata: read R datasets from Python.
+
+Development: https://github.com/vnmabus/rdata
+
+Documentation: https://rdata.readthedocs.io/
 
 This package parses .rda datasets used in R. It does not depend on the R
 language or its libraries, and thus it is released under a MIT license.
