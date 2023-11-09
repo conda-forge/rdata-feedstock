@@ -1,5 +1,5 @@
 {% set name = "rdata" %}
-{% set version = "0.9.1" %}
+{% set version = "0.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rdata-{{ version }}.tar.gz
-  sha256: 014f0d462c63508620482bde7241a4300337d0c170fd38f157f4b301faaa7f27
+  sha256: 1da9817150723a1215c8264ebce54d2f52a12e92e135d0e3822fa00597d82a34
 
 build:
   number: 0
