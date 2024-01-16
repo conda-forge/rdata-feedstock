@@ -11,18 +11,18 @@ source:
   sha256: 1da9817150723a1215c8264ebce54d2f52a12e92e135d0e3822fa00597d82a34
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6,<4.0
+    - python >=3.9,<4.0
   run:
     - numpy
     - pandas
-    - python >=3.6,<4.0
+    - python >=3.9,<4.0
     - xarray
 
 test:
