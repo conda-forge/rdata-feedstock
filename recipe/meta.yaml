@@ -7,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rdata-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rdata-{{ version }}.tar.gz
   sha256: 86f50312f97569c656f01d6dc343b920ded0ccf884a31decfb670cbef80bab39
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9,<4.0
+    - python {{ python_min }}
   run:
     - typing-extensions >4.4
     - numpy
     - pandas
-    - python >=3.9,<4.0
+    - python >={{ python_min }},<4.0
     - xarray
 
 test:
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/vnmabus/rdata
