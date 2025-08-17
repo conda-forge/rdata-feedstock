@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - typing-extensions >4.4
     - numpy
