@@ -1,5 +1,5 @@
 {% set name = "rdata" %}
-{% set version = "0.11.2" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rdata-{{ version }}.tar.gz
-  sha256: 86f50312f97569c656f01d6dc343b920ded0ccf884a31decfb670cbef80bab39
+  sha256: d924d7657c9eeaee4b86a0ae87999f5beb0070ed47bd491c85bc79ee9644596d
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,6 +21,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
+    - typing_extensions >4.4
     - typing-extensions >4.4
     - numpy
     - pandas
